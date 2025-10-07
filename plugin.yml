@@ -1,0 +1,35 @@
+name: LobbyBasics
+version: 0.0.1
+main: LB\Main
+api: [2.0.0]
+author: luxuryyy7
+description: "Lobby básic functions"
+commands:
+  ad:
+    description: Send an AD
+    usage: "/ad <message>"
+    permission: lb.ad
+  info:
+    description: Show server info
+    usage: "/info"
+  helps:
+    description: Show help pages
+    usage: "/helps [page]"
+  spawn:
+    description: Teleport to spawn
+    usage: "/spawn"
+  rules:
+    description: Show server rules
+    usage: "/rules"
+  colors:
+    description: Show color codes
+    usage: "/colors"
+    permission: lb.colors
+  lb:
+    description: LobbyBasics plugin command
+    usage: "/lb <info|help>"
+permissions:
+  lb.ad:
+    default: op
+  lb.colors:
+    default: op
